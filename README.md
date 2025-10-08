@@ -12,6 +12,12 @@ A modern React UI library with beautiful purple gradients, smooth animations, an
 - 🚀 **Lightweight** - Optimized bundle size with tree-shaking support
 - 🎪 **Accessible** - Built with accessibility in mind
 
+## 🎮 Live Demo
+
+**Try ChalyshUI in action!** Visit our interactive demo to see all components with their beautiful animations and purple gradients:
+
+👉 **[https://chalysh.tech/chalysh-ui](https://chalysh.tech/chalysh-ui)**
+
 ## Installation
 
 ```bash
@@ -231,6 +237,10 @@ npm run type-check
 # Run linting
 npm run lint
 ```
+
+### Demo
+
+You can also view the demo locally by opening `demo.html` in your browser, or visit the live demo at [https://chalysh.tech/chalysh-ui](https://chalysh.tech/chalysh-ui).
 
 ## License
 
