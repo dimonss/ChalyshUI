@@ -16,7 +16,7 @@ A modern React UI library with beautiful purple gradients, smooth animations, an
 
 **Try ChalyshUI in action!** Visit our interactive demo to see all components with their beautiful animations and purple gradients:
 
-👉 **[https://chalysh.tech/chalysh-ui](https://chalysh.tech/chalysh-ui)**
+👉 **[https://chalysh.pro/chalysh-ui](https://chalysh.pro/chalysh-ui)**
 
 ## Installation
 

@@ -1,6 +1,6 @@
 {
   "name": "chalysh-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A modern React UI library with purple gradients and smooth animations",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
