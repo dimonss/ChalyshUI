@@ -14,7 +14,9 @@
     "dev": "rollup -c -w",
     "test": "jest",
     "lint": "eslint src --ext .ts,.tsx",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "publish": "npm publish",
+    "publish:public": "npm publish --access public"
   },
   "keywords": [
     "react",
