@@ -49,7 +49,7 @@ const getVariantStyles = (variant: ButtonProps['variant'], gradient?: ButtonProp
           box-shadow: ${theme.shadows.purple};
         }
       `;
-    
+
     case 'secondary':
       return css`
         background: ${theme.colors.secondary[100]};
@@ -62,7 +62,7 @@ const getVariantStyles = (variant: ButtonProps['variant'], gradient?: ButtonProp
           transform: translateY(-2px);
         }
       `;
-    
+
     case 'outline':
       return css`
         background: transparent;
@@ -76,7 +76,7 @@ const getVariantStyles = (variant: ButtonProps['variant'], gradient?: ButtonProp
           box-shadow: ${theme.shadows.purple};
         }
       `;
-    
+
     case 'ghost':
       return css`
         background: transparent;
@@ -88,7 +88,7 @@ const getVariantStyles = (variant: ButtonProps['variant'], gradient?: ButtonProp
           color: ${theme.colors.primary[700]};
         }
       `;
-    
+
     case 'gradient':
       const gradientMap = {
         primary: theme.colors.gradient.primary,
@@ -97,7 +97,7 @@ const getVariantStyles = (variant: ButtonProps['variant'], gradient?: ButtonProp
         violet: theme.colors.gradient.violet,
         dark: theme.colors.gradient.dark,
       };
-      
+
       return css`
         background: ${gradientMap[gradient || 'purple']};
         color: white;
@@ -134,7 +134,7 @@ const getVariantStyles = (variant: ButtonProps['variant'], gradient?: ButtonProp
           transform: translateY(0);
         }
       `;
-    
+
     default:
       return css`
         background: ${theme.colors.primary[600]};
@@ -202,11 +202,17 @@ export const StyledButton = styled.button<ButtonProps>`
   
   ${({ loading }) => loading && css`
     pointer-events: none;
-    opacity: 0.7;
+    
+    & > span {
+      opacity: 0;
+    }
     
     &::after {
       content: '';
       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 16px;
       height: 16px;
       border: 2px solid transparent;
@@ -246,8 +252,8 @@ export const StyledButton = styled.button<ButtonProps>`
   }
   
   @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
   }
 `;
 
